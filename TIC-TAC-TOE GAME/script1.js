@@ -41,6 +41,10 @@ console.log(rows);
         buttonArray();
        if(rows>0){ var rescont=document.querySelector('.result-container');
        rescont.style.visibility='visible';}
+       else{
+        var rescont=document.querySelector('.result-container');
+        rescont.style.visibility='hidden';
+    }
   }
 
 //logic to add data in grid
