@@ -1,0 +1,42 @@
+body{
+    background-color: beige;
+}
+
+#start{
+    text-align: center;
+    text-decoration-line: underline;
+    -webkit-text-fill-color: darkcyan;
+}
+
+div.container{
+  position:relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 12px; /* Adjust padding to increase cell height */
+    text-align: center;
+    width: 250px;
+  }
+  tr {
+    height: 200px; /* Set the height of the table rows */
+   
+  }
+
+button.tab{
+
+width: 100%;
+height: 200px;
+
+
+}
+ 
+#res{
+  position: absolute;
+}

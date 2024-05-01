@@ -1,0 +1,84 @@
+.container {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+   
+}
+
+.left-section {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Adjust as needed */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%; /* Adjust the ratio as needed */
+  background-color: #e6d945;
+   /* Example background color
+    */
+
+    
+}
+
+
+.left-section > * {
+    width: 400px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    font-size: 24px;/*to increase font size*/
+}
+.result-container{
+    background-color: rgb(222, 244, 60);
+    border: #000000;
+    width: 70%;
+    height: auto;
+    visibility: hidden;
+    border-radius: 20px;
+}
+
+
+.divider {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: 0;
+    width: 10px; /* Width of the divider line */
+    background-color: #000000; /* Color of the divider line */
+}
+
+.right-section {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+   
+    align-items: center; /* Center items horizontally */
+    height: 100vh;
+    position: absolute;
+    left: 30.5%;
+    top: 0;
+    bottom: 0;
+    width: 70%; /* Adjust the ratio as needed */
+    background-color: #c0e7ee; /* Example background color */
+
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 20s linear infinite;
+   
+    
+}
+
+@keyframes slideAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.grid-container{
+ 
+    background-color: rgb(4, 4, 7);
+}
+
