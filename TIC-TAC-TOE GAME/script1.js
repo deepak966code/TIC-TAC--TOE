@@ -11,7 +11,7 @@ var array=[];
 
 //function to create grid structure.
 function createGrid() {
-
+  
    
 console.log(rows);
     
@@ -192,3 +192,7 @@ bt1.addEventListener('click',createGrid);
 //action for button reset
 bt2.addEventListener('click',functionReset);
 
+dropdown.addEventListener("mouseenter", function() {
+    var audio = document.getElementById('backgroundAudio');
+    audio.play();
+});
