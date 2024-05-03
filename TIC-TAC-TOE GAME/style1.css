@@ -82,3 +82,17 @@
     background-color: rgb(4, 4, 7);
 }
 
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .left-section {
+        width: 30%;
+    }
+    .right-section {
+        width: 70%;
+    }
+}
+
+
