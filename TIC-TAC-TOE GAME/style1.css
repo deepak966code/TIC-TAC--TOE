@@ -81,29 +81,27 @@
  
     background-color: rgb(4, 4, 7);
 }
+/* Default styles */
+/* Add your default CSS styles here */
 
-/* CSS for mobile screens */
-@media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
-    .container {
-        width: 90%; /* Adjust width as needed */
-    }
-    .left-section {
-        width: 100%; /* Adjust width as needed */
-    }
-    .right-section {
-        width: 100%; /* Adjust width as needed */
-    }
-    .left-section > * {
-        width: 100%; /* Adjust width as needed */
-        max-width: none; /* Allow elements to expand to full width */
-    }
-    .result-container {
-        width: 100%; /* Adjust width as needed */
-        max-width: none; /* Allow element to expand to full width */
-    }
-    .divider {
-        display: none; /* Hide divider on smaller screens if necessary */
-    }
+/* Adjustments for responsiveness */
+.container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Limit maximum width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
+.left-section, .right-section {
+    width: 100%; /* Occupy full width of the container */
+}
+
+.left-section > *, .right-section > * {
+    max-width: 100%; /* Ensure content doesn't exceed its container's width */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust width as needed for smaller screens */
+    }
+}
