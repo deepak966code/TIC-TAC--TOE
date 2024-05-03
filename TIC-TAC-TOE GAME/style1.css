@@ -1,7 +1,7 @@
 .container {
     position: relative;
     height: 100vh; /* Adjust as needed */
-   
+    overflow: auto;
 }
 
 .left-section {
@@ -90,6 +90,7 @@ label {
 }
 select {
     width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     border-radius: 20px;
     box-sizing: border-box;
