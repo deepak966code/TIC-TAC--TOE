@@ -82,17 +82,28 @@
     background-color: rgb(4, 4, 7);
 }
 
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
+/* CSS for mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
     .container {
-        flex-direction: row;
+        width: 90%; /* Adjust width as needed */
     }
     .left-section {
-        width: 30%;
+        width: 100%; /* Adjust width as needed */
     }
     .right-section {
-        width: 70%;
+        width: 100%; /* Adjust width as needed */
+    }
+    .left-section > * {
+        width: 100%; /* Adjust width as needed */
+        max-width: none; /* Allow elements to expand to full width */
+    }
+    .result-container {
+        width: 100%; /* Adjust width as needed */
+        max-width: none; /* Allow element to expand to full width */
+    }
+    .divider {
+        display: none; /* Hide divider on smaller screens if necessary */
     }
 }
-
 
