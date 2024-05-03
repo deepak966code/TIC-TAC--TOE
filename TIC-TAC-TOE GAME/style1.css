@@ -81,6 +81,22 @@
  
     background-color: rgb(4, 4, 7);
 }
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px #bbff1c;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+
 /* Default styles */
 /* Add your default CSS styles here */
 
